@@ -62,12 +62,12 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <h1>
+        <h1 className="">
           Let's work <br></br>together
         </h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>rkcool@gmail.com</span>
+          <span>rkcoola792@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
@@ -131,8 +131,10 @@ const Contact = () => {
           <form action="" ref={formRef} onSubmit={sendEmail}>
             <input type="text" name="name" required placeholder="Name" ref={userName}/>
             <input type="email" name="email" required placeholder="Email" ref={userEmail}/>
+
             <textarea
             ref={userMessage}
+            className="text-message h-32"
               name="message"
               id=""
               cols="30"

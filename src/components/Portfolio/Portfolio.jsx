@@ -43,14 +43,14 @@ const Single = ({ item }) => {
 
   return (
     <section>
-      <div className="container">
+      <div className="container pb-12">
         <div className="wrapper">
           <div className="image" ref={ref}>
             <img src={item.img} alt="" />
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
-            <p>{item.desc}</p>
+            <p className="">{item.desc}</p>
             <a href={item.link}>
               <button>See Demo </button>
             </a>
@@ -75,7 +75,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1 className="text-3xl">Featured Works</h1>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
       {items.map((item) => (

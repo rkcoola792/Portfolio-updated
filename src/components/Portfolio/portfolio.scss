@@ -74,7 +74,7 @@
       }
       p {
         color: gray;
-        line-height: 1.5;
+        line-height: 2;
         text-wrap: wrap;
       }
       button {
@@ -84,6 +84,7 @@
         width: 120px;
         padding: 15px;
         font-weight: 500;
+        color: black;
         @include mobile{
           align-self: center;
         }

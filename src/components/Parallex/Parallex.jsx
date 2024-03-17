@@ -14,7 +14,7 @@ const Parallex = ({type}) => {
     
   return (
     <div
-      className="parallex"
+      className="parallex h-[]"
       ref={ref}
       style={{
         background:

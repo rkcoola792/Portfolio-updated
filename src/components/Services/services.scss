@@ -43,6 +43,7 @@
 
       @include mobile{
         flex-direction: column;
+        
       }
       img {
         width: 220px;
@@ -60,7 +61,7 @@
         }
       }
           @include mobile{
-        font-size: 48px;
+        font-size: 40px;
       }
 
       }
@@ -73,6 +74,7 @@
 
         @include mobile{
           margin-bottom: 25px;
+          color: black;
 
         }
       }
@@ -104,6 +106,8 @@
       margin-bottom: 10px;
       border-radius: 10px;
       text-align: center;
+      gap:30px;
+      
        &:hover{
         background-color: aliceblue;
         color: black;
@@ -111,12 +115,14 @@
     }
       @include mobile{
         margin:6px; 
-        width:170px
+        width:170px;
+        width: 100%;
       }
       p{ 
         @include mobile{
-          display: none;
-          
+          // display: none;
+          line-height: 2;
+          // text-align: ;
         }
       }
       
@@ -131,6 +137,7 @@
 
         @include mobile{
           width: 100px;
+          color: #0c0c1d;
         }
       }
     }

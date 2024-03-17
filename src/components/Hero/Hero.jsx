@@ -40,7 +40,7 @@ const sliderVariants={
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero flex flex-col ">
       <div className="wrapper">
         <motion.div
           className="textContainer"
@@ -62,7 +62,7 @@ const Hero = () => {
               </motion.button>
             </a>
             <a href="#Contact">
-              <motion.button variants={textVariants}>Contact Me</motion.button>
+              <motion.button variants={textVariants} className="">Contact Me</motion.button>
             </a>
           </motion.div>
           <motion.img
@@ -72,7 +72,7 @@ const Hero = () => {
           ></motion.img>
         </motion.div>
       </div>
-      <motion.div
+      <motion.div 
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
@@ -80,7 +80,7 @@ const Hero = () => {
       >
         Full Stack Developer
       </motion.div>
-      <div className="imageContainer">
+      <div className="imageContainer ">
         <img src="./avatar.png"></img>
       </div>
     </div>

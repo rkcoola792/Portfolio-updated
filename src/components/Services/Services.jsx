@@ -18,9 +18,9 @@ const variants = {
 
 const Services = () => {
   return (
-    <motion.div className="services" variants={variants}>
+    <motion.div className="services py-6 h-[100%]" variants={variants}>
       <motion.div
-        className="textContainer"
+        className="textContainer pb-8"
         variants={variants}
         initial="initial"
         whileInView="animate"
@@ -63,7 +63,7 @@ const Services = () => {
         whileInView="animate"
       >
         <div className="box">
-          <h2>Frontend</h2>
+          <h2 className="text-3xl font-semibold">Frontend</h2>
           <p>
             Creating beautifull UI and UX experience with latest frontend
             technologies.
@@ -74,7 +74,7 @@ const Services = () => {
           </a>
         </div>
         <div className="box">
-          <h2>Backend</h2>
+          <h2 className="text-3xl">Backend</h2>
           <p>
             Can handle the server side code as well with NodeJS, express server
             and javascript.
@@ -84,7 +84,7 @@ const Services = () => {
           </a>
         </div>
         <div className="box">
-          <h2>Database</h2>
+          <h2 className="text-3xl">Database</h2>
           <p>
             Experience in multiple databases like mongoDb, SQL, and redis for
             faster data retrieval.
@@ -93,11 +93,11 @@ const Services = () => {
             <button>GO</button>
           </a>
         </div>
-        <div className="box">
-          <h2>Deploy</h2>
+        <div className="box ">
+          <h2 className="text-3xl">Deploy</h2>
           <p>
-            Knowledge of CI/CD pipelines, git, AWS and
-            firebase for deployment and maintenance.
+            Knowledge of CI/CD pipelines, git, AWS and firebase for deployment
+            and maintenance.
           </p>
           <a href="https://todo-list-react-redux-toolkit.web.app/">
             <button>GO</button>
