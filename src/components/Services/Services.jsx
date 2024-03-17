@@ -18,7 +18,7 @@ const variants = {
 
 const Services = () => {
   return (
-    <motion.div className="services py-6 h-[100%] px-12" variants={variants}>
+    <motion.div className="services py-6 h-[100%] " variants={variants} id="Service">
       <motion.div
         className="textContainer pb-8"
         variants={variants}

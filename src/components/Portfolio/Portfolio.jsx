@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     title: "Media Dynox",
-    img: "https://pbs.twimg.com/media/GDTYIhhXMAAiv2-.jpg",
+    img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     desc: `Engage visitors with our dynamic React and Framer Motion powered landing page. Experience smooth animations, captivating visuals, and seamless navigation. Explore our innovative features, crafted for your needs. Join us on a journey of innovation and creativity.`,
     link: "https://media-dynox-ajij-eosin.vercel.app/",
   },
@@ -51,6 +51,7 @@ const Single = ({ item }) => {
   return (
     <section>
       <motion.div
+      id="Portfolio"
         className="container pb-12"
         initial={{ y: 75, opacity: 0 }}
         animate={{ opacity: 1, y: 0 }}
@@ -58,7 +59,7 @@ const Single = ({ item }) => {
       >
         <div className="wrapper">
           <div className="image" ref={ref}>
-            <img src={item.img} alt="" />
+            <img src={item.img} alt="" className="" />
           </div>
           <div className="textContainer" style={{ y }}>
             <h2 className="hover:text-orange-400 cursor-pointer">{item.title}</h2>

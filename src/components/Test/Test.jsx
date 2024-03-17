@@ -39,9 +39,7 @@ const [as,setAs]=useState(0)
     }
   }
   useEffect(()=>{
-    console.log("hi " ,as )
   },[as])
-  console.log("as "+as)
   return (
     <>
       <button onClick={()=>setA(!a)}>click</button>
