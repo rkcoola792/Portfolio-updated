@@ -56,12 +56,13 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className="contact"
+      className="contact "
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="textContainer" variants={variants}>
+      
+      <motion.div className="textContainer h-svh sm:mt-12" variants={variants}>
         <h1 className="">
           Let's work <br></br>together
         </h1>

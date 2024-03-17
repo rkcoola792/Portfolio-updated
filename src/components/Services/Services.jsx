@@ -18,7 +18,7 @@ const variants = {
 
 const Services = () => {
   return (
-    <motion.div className="services py-6 h-[100%]" variants={variants}>
+    <motion.div className="services py-6 h-[100%] px-12" variants={variants}>
       <motion.div
         className="textContainer pb-8"
         variants={variants}
@@ -46,10 +46,10 @@ const Services = () => {
             Ideas
           </h1>
         </div>
-        <div className="title">
-          <h1>
+        <div className="title title2">
+          <h1 className="ml-[12%] sm:ml-0">
             <span>
-              <b>For your </b>
+              <b className="">For your </b>
             </span>{" "}
             Business.
           </h1>
@@ -57,10 +57,11 @@ const Services = () => {
         </div>
       </motion.div>
       <motion.div
-        className="listContainer"
+        className="listContainer "
         variants={variants}
         initial="initial"
         whileInView="animate"
+        
       >
         <div className="box">
           <h2 className="text-3xl font-semibold">Frontend</h2>

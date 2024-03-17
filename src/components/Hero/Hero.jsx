@@ -40,7 +40,7 @@ const sliderVariants={
 
 const Hero = () => {
   return (
-    <div className="hero flex flex-col ">
+    <div className="hero flex flex-col py-12 w-full ">
       <div className="wrapper">
         <motion.div
           className="textContainer"
