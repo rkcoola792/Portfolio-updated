@@ -62,7 +62,7 @@ const Contact = () => {
       whileInView="animate"
     >
       
-      <motion.div className="textContainer h-svh sm:mt-12" variants={variants}>
+      <motion.div className="textContainer  " variants={variants}>
         <h1 className="">
           Let's work <br></br>together
         </h1>

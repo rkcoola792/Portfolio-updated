@@ -46,8 +46,8 @@
     .svg {
       position: absolute;
       stroke: orange;
-      height: 400px;
-      width: 400px;
+      height: 90%;
+      width: 90%;
       z-index: -1;
 
       @include mobile {

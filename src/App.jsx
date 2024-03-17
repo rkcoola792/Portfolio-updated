@@ -26,7 +26,7 @@ const App = () => {
         <Parallex type="portfolio" />
       </section>
      <Portfolio></Portfolio>
-      <section id="Contact" className='h-svh'><Contact/></section> 
+      <section id="Contact" className=' h-svh'><Contact/></section> 
       
       
     </div>
