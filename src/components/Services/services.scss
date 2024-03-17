@@ -1,0 +1,139 @@
+@import "../../app.scss" ;
+.services {
+  height: 100%;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    p {
+      color: gray;
+      text-align: right;
+      margin-right: 15px;
+    }
+    hr {
+      width: 300px;
+      border: none;
+      border-top: 1px solid gray;
+    }
+  }
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1.5;
+    .title {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+
+      @include mobile{
+        flex-direction: column;
+      }
+      img {
+        width: 220px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      h1 {
+        font-size: 56px;
+        font-weight: 100;
+        margin-bottom: 8px;
+        span{
+        &:hover {
+            color: orange;
+        }
+      }
+          @include mobile{
+        font-size: 48px;
+      }
+
+      }
+      button {
+        width: 220px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: orange;
+        font-size: larger;
+
+        @include mobile{
+          margin-bottom: 25px;
+
+        }
+      }
+    }
+  }
+  .listContainer {
+    flex: 2;
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+    @include mobile{
+     margin: 1em;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 25px;
+
+    }
+    
+   
+
+    .box {
+      padding: 30px;
+      width: 300px;
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      text-align: center;
+       &:hover{
+        background-color: aliceblue;
+        color: black;
+        opacity: 85%;
+    }
+      @include mobile{
+        margin:6px; 
+        width:170px
+      }
+      p{ 
+        @include mobile{
+          display: none;
+          
+        }
+      }
+      
+    a{
+      button {
+        background-color: orange;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        border-radius:10px ;
+        width: 150px;
+
+        @include mobile{
+          width: 100px;
+        }
+      }
+    }
+    }
+  }
+}
