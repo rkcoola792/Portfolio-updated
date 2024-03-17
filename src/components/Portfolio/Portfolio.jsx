@@ -43,20 +43,25 @@ const Single = ({ item }) => {
 
   return (
     <section>
-      <div className="container pb-12">
+      <motion.div
+        className="container pb-12"
+        initial={{ y: 75, opacity: 0 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <div className="wrapper">
           <div className="image" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
-            <h2>{item.title}</h2>
+          <div className="textContainer" style={{ y }}>
+            <h2 className="hover:text-orange-400 cursor-pointer">{item.title}</h2>
             <p className="">{item.desc}</p>
             <a href={item.link}>
               <button>See Demo </button>
             </a>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
@@ -75,7 +80,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1 className="text-3xl">Featured Works</h1>
+        <h1 className="text-3xl sm:text-5xl">Featured Works</h1>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
       {items.map((item) => (
